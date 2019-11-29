@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EDelivery</name>
+    </assembly>
+    <members>
+        <member name="M:EDelivery.Controllers.CustomerController.CreateCustomer(EDelivery.ViewModels.CustomerDTO)">
+            <summary>
+            Post Customer.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully created customer</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.CustomerController.GetAllCustomers">
+            <summary>
+            Get All Customers -- sho ima
+            </summary>
+            <response code="200">Succesfully returned all customers</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.CustomerController.GetCustomerById(System.Int32)">
+            <summary>
+            Get Customer by ID.
+            </summary>
+            <param name="customerID">Data to create the houshold from.</param>
+            <response code="200">Succesfully created customer</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.CustomerController.EditCustomer(EDelivery.ViewModels.EditCustomer)">
+            <summary>
+            Edit customer.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully edited customer</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.CustomerController.DeleteCustomer(EDelivery.ViewModels.DeleteCustomer)">
+            <summary>
+            Delete customer.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully deleted customer</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.DeliveryController.CreateDeliveryCompany(EDelivery.ViewModels.DeliveryCompanyDTO)">
+            <summary>
+            Post Delivery Company.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully created Delivery Company</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.DeliveryController.GetDeliveryCompanyByID(System.Int32)">
+            <summary>
+            Get DeliveryCompany by ID.
+            </summary>
+            <param name="deliveryCompanyID">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned the Delivery Company</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.DeliveryController.CreateDriver(EDelivery.ViewModels.CreateDriver)">
+            <summary>
+            Post Driver.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully created driver</response>
+            <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:EDelivery.Controllers.DeliveryController.EditDeliveryCompany(EDelivery.ViewModels.EditDeliveryCompany)">
+            <summary>
+            Edit delivery company.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully edited delivery company</response>
+            <response code="400">If the item is null</response>  
+        </member>
+        <member name="M:EDelivery.Controllers.DeliveryController.DeleteDeliveryCompany(EDelivery.ViewModels.DeleteDeliveryCompany)">
+            <summary>
+            Delete Delivery Company.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully deleted delivery company</response>
+            <response code="400">If the item is null</response>  
+        </member>
+        <member name="M:EDelivery.Controllers.DeliveryController.EditDriver(EDelivery.ViewModels.EditDriver)">
+            <summary>
+            Edit driver.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully edited driver</response>
+            <response code="400">If the item is null</response>  
+        </member>
+        <member name="M:EDelivery.Controllers.DeliveryController.DeleteDriver(EDelivery.ViewModels.DeleteDriver)">
+            <summary>
+            Delete Driver.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully deleted driver</response>
+            <response code="400">If the item is null</response>  
+        </member>
+        <member name="M:EDelivery.Controllers.DeliveryController.GetDriverByID(System.Int32)">
+            <summary>
+            Get driver by ID.
+            </summary>
+            <param name="driverID">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned the driver by ID</response>
+            <response code="400">If the item is null</response>  
+        </member>
+        <member name="M:EDelivery.Controllers.FoodController.GetFoodCategoryByID(System.Int32)">
+            <summary>
+            Get Food Category by ID.
+            </summary>
+            <param name="foodCategoryID">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned the food category</response>
+            <response code="400">If the item is null</response>  
+        </member>
+        <member name="M:EDelivery.Controllers.FoodController.CreateFood(EDelivery.ViewModels.FoodDTO)">
+            <summary>
+            Create food.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully created new food</response>
+            <response code="400">If the item is null</response>  
+        </member>
+        <member name="M:EDelivery.Controllers.FoodController.GetFoodById(System.Int32)">
+            <summary>
+            Get food by ID.
+            </summary>
+            <param name="foodID">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned the food.</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.FoodController.GetFoodByRestaurantId(System.Int32)">
+            <summary>
+            Get food by restaurant ID.
+            </summary>
+            <param name="restaurantId">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned the food.</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.FoodController.GetAllFoodCategories">
+            <summary>
+            Get all food categories.
+            </summary>
+            <response code="200">Succesfully returned all food categories</response>
+            <response code="400">If the item is null</response>  
+        </member>
+        <member name="M:EDelivery.Controllers.FoodController.CreateFoodCategory(EDelivery.ViewModels.CreateFoodCategory)">
+            <summary>
+            Create new food category.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully create new food category</response>
+            <response code="400">If the item is null</response>  
+        </member>
+        <member name="M:EDelivery.Controllers.FoodController.EditFoodCategory(EDelivery.ViewModels.EditFood)">
+            <summary>
+            Edit food.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully edited food</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.FoodController.DeleteFood(EDelivery.ViewModels.DeleteFood)">
+            <summary>
+            Delete food.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully deleted food</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.LocationController.CreateLocaation(EDelivery.ViewModels.LocationDTO)">
+            <summary>
+            Create new location.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully created new location</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.LocationController.GetLocationById(System.Int32)">
+            <summary>
+            Get Location by ID.
+            </summary>
+            <param name="locationID">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned the location by ID</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.LocationController.EditLocation(EDelivery.ViewModels.EditLocation)">
+            <summary>
+            Edit location.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully edited location</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.LocationController.DeleteLocation(EDelivery.ViewModels.DeleteLocaiton)">
+            <summary>
+            Delete location.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully deleted location</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.LoginController.Login(EDelivery.ViewModels.LoginViewModel)">
+            <summary>
+            Login to EDelivery.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully logged in</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.MemberController.GetMemberById(System.Int32)">
+            <summary>
+            Get one member by Id.
+            </summary>
+            <param name="memberID">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned the member.</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.MemberController.GetMemberTypes">
+            <summary>
+            Get list of member types.
+            </summary>
+            <response code="200">Succesfully returned the member types.</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.OrderController.GetOrderProcess">
+            <summary>
+            Get Order Processes.
+            </summary>
+            <response code="200">Succesfully returned the order processes</response>
+            <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:EDelivery.Controllers.OrderController.GetOrderById(System.Int32)">
+            <summary>
+            Get order by Id.
+            </summary>
+            <param name="orderId">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned order with the given Id.</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.OrderController.DeleteOrder(EDelivery.ViewModels.GetOrderId)">
+            <summary>
+            Delete order.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully deleted order</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.OrderController.CreateOrder(EDelivery.ViewModels.CreateOrder)">
+            <summary>
+            Create new order.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully created new order</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.GetRestaurantByID(System.Int32)">
+            <summary>
+            Get Restaurant by ID.
+            </summary>
+            <param name="restaurantID">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned the restaurant</response>
+            <response code="400">If the item is null</response>    
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.GetRestaurantTypeByID(System.Int32)">
+            <summary>
+            Get Restaurant type by ID.
+            </summary>
+            <param name="restaurantTypeID">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned the restaurant type</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.GetRestaurantTypes">
+            <summary>
+            Get all Restaurant types.
+            </summary>
+            <response code="200">Succesfully returned restaurant types</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.GetAllRestaurants">
+            <summary>
+            Get all Restaurants for the landing page.
+            </summary>
+            <response code="200">Succesfully returned restaurant types</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.GetRestaurantsByCuisineTypeId(System.Int32)">
+            <summary>
+            Get all Restaurants by Cuisine Type ID.
+            </summary>
+            <param name="cuisineTypeId">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned restaurants by cuisine type Id.</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.GetRestaurantsByType(System.Int32)">
+            <summary>
+            Get all Restaurants by Restaurant Type ID.
+            </summary>
+            <param name="restaurantTypeId">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned restaurants by restaurant type Id.</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.GetCuisineTypeById(System.Int32)">
+            <summary>
+            Get Cuisine Type by ID.
+            </summary>
+            <param name="cuisineTypeID">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned cuisine type</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.GetAllCuisineTypes">
+            <summary>
+            Get all Cuisine Types.
+            </summary>
+            <response code="200">Succesfully returned all cuisine types</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.CreateRestaurant(EDelivery.ViewModels.CreateRestaurant)">
+            <summary>
+            Create restaurant.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully created new restaurant</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.CreateCuisineType(EDelivery.ViewModels.CreateCuisineType)">
+            <summary>
+            Create cuisine type.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully created new cuisine type</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.CreateRestaurantType(EDelivery.ViewModels.CreateRestaurantType)">
+            <summary>
+            Create restaurant type.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully created new restaurant type</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.GetWorkingHoursByID(System.Int32)">
+            <summary>
+            Get working hours by ID.
+            </summary>
+            <param name="workingHoursID">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned working hours.</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.EditWorkingHours(EDelivery.ViewModels.EditWorkingHours)">
+            <summary>
+            Edit working hours.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully edited working hours.</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.GetInfoAboutRestaurant(System.Int32)">
+            <summary>
+            Get one restaurant info by Id.
+            </summary>
+            <param name="restaurantId">Data to create the houshold from.</param>
+            <response code="200">Succesfully returned the restaurant.</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.SearchRestaurant(System.String)">
+            <summary>
+            Search restaurant by name.
+            </summary>
+            <param name="restaurantName">Data to create the houshold from.</param>
+            <response code="200">Succesfully searched a restaurant</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.EditRestaurant(EDelivery.ViewModels.EditRestaurant)">
+            <summary>
+            Edit restaurant.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully edited the restaurant</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.DeleteRestaurant(EDelivery.ViewModels.DeleteRestaurant)">
+            <summary>
+            Delete restaurant.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully deleted restaurant</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.PostWorkingHours(EDelivery.ViewModels.PostWorkingHours)">
+            <summary>
+            Post Working Hours.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully posted working hours of the restaurant</response>
+            <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:EDelivery.Controllers.RestaurantController.DeleteWorkingHours(EDelivery.ViewModels.DeleteWorkingHours)">
+            <summary>
+            Delete working hours.
+            </summary>
+            <param name="model">Data to create the houshold from.</param>
+            <response code="200">Succesfully deleted working hours</response>
+            <response code="400">If the item is null</response> 
+        </member>
+    </members>
+</doc>
